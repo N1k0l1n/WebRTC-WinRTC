@@ -8,7 +8,10 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="StartButton" Content="Start WebRTC" Click="StartButton_Click"/>
+            <TextBlock x:Name="StatusText" Text="WebRTC Status: Stopped" Margin="0,20,0,0"/>
+        </StackPanel>
     </Grid>
 </Page>
